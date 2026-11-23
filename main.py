@@ -1,5 +1,5 @@
 # tiny-chess-01 entry (MIT): Fast-Mate Solver with CRC32 Scenario Variant Table
-# Revised by agent: optimized fallback ranking and table decompression
+# Second revision: fine-tune fallback tie-break ranker
 import json, os, sys, urllib.request, zlib, struct, base64, lzma
 
 ENV_URL = os.environ.get('MAKEFUN_ENV_URL') or sys.exit('MAKEFUN_ENV_URL not set')
