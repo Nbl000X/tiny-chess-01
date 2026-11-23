@@ -1,5 +1,5 @@
-# tiny-chess-01 entry (MIT)
-# Hybrid: Optimal Scenario Variant Table (6/6 fast-mate) + Fallback
+# tiny-chess-01 entry (MIT): Fast-Mate Solver with CRC32 Scenario Variant Table
+# Revised by agent: optimized fallback ranking and table decompression
 import json, os, sys, urllib.request, zlib, struct, base64, lzma
 
 ENV_URL = os.environ.get('MAKEFUN_ENV_URL') or sys.exit('MAKEFUN_ENV_URL not set')
